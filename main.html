@@ -5,6 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .head_font {
+            font-size: 50pt;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            display: inline-block;
+        }
+        .head {
+            padding: 0 0 0 400px;
+        }
+        a {
+            text-decoration: none;
+        }
+        header {
+            background-color: aqua;
+        }
+        .option {
+            /* margin: 0 0 20px 100px; */
+            width: 70px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <!--블로그 이름 + 이름은 로그인화면 제외 모든창에 추가, 
@@ -21,6 +48,20 @@
     오른쪽엔 자신의 계정 정보와 자신이 작성한 글 보여줌
     닉네임 클릭하거나 우측 상단의 프로필 누르면 profile 탭으로 이동
     -->
-    
+    <header>
+        <div class="head_line">
+            <a href="main.html" class="head head_font">My Blog</a>
+
+            <select class="option"float ="center">
+                <option value="sentense">글</option>
+                <option value="ID">아이디</option>
+                <option value="name">블로그</option>
+            </select>
+        </div>
+
+            
+
+        
+    </header>
 </body>
 </html>
