@@ -14,7 +14,6 @@
             font-size: 50pt;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: white;
-            display: inline-block;
         }
         .head {
             padding: 0 0 0 400px;
@@ -28,8 +27,20 @@
         .option {
             /* margin: 0 0 20px 100px; */
             width: 70px;
-            height: 20px;
+            height: 50px;
             text-align: center;
+        }
+        .button {
+            width: 40px;
+            height: 40px;
+        }
+        .login_button {
+            float: right;
+        }
+        .main_button {
+            float: right;
+            width: 300px;
+            height: 50px;
         }
     </style>
 </head>
@@ -48,20 +59,38 @@
     오른쪽엔 자신의 계정 정보와 자신이 작성한 글 보여줌
     닉네임 클릭하거나 우측 상단의 프로필 누르면 profile 탭으로 이동
     -->
-    <header>
-        <div class="head_line">
-            <a href="main.html" class="head head_font">My Blog</a>
+    <form>
+        <header>
+            <div class="head_line">
+                <a href="main.html" class="head head_font">My Blog</a>
 
-            <select class="option"float ="center">
-                <option value="sentense">글</option>
-                <option value="ID">아이디</option>
-                <option value="name">블로그</option>
-            </select>
-        </div>
+                <select class="option"float ="center">
+                    <option value="sentense">글</option>
+                    <option value="ID">아이디</option>
+                    <option value="name">블로그</option>
+                </select>
+                <input type="text">
+                <input type="button" class="button">
+                <button type="button" class="login_button" onClick="location.href='login.html'">로그인</button>
+            </div>
+        </header>
+            <div>
+                <ul>
+                    <li><a href="#">목록1</a></li>
+                    <li><a href="#">목록</a>2</li>
+                    <li>목록3</li>
+                    <li>목록4</li>
+                </ul>
+            </div>
+        <table>
+            <tr>
+                <td><button type="button" class="main_button" onClick="location.href='login.html'">로그인</button></td>
+            </tr>
+            <tr>
 
-            
+            </tr>
+        </table>
+    </form>
 
-        
-    </header>
 </body>
 </html>

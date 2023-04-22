@@ -5,8 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .head_font {
+            font-size: 50pt;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+        .head {
+            padding: 0 0 0 400px;
+        }
+        header {
+            background-color: aqua;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <!--네이버 블로그 프로필 참조-->
+    <header>
+        <div>
+            <a href="main.html" class="head head_font">My Blog</a>
+        </div>
+    </header>
+    <div>
+        <h2>프로필 수정</h2>
+    </div>
+    <div>
+        <p>자신의 프로필과 별명을 수정하실수 있습니다</p>
+    </div>
+
+    <form>
+        <table border="1">
+            <tr>
+                <td>프로필 사진</td><!--세칸 사용-->
+                <td><img src="#" alt="#"><button>사진변경</button><button>삭제</button></td>
+            </tr><!--사진변경과 삭제 버튼을 사진 칸 아래로 이동-->
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" placeholder="아이디"></td>
+            </tr>
+        </table>
+        <div>
+            <button>적용</button>
+            <button>취소</button>
+        </div>
+    </form>
 </body>
 </html>
