@@ -12,7 +12,47 @@
 }
 header {
     background-color: aqua;
+    margin-bottom: 30px;
 }
 a {
     text-decoration: none;
+}
+.container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+
+.main_content {
+    width: 720px;
+    float: left;
+}
+
+
+.aside {
+    width: 320px;
+    float: right;
+}
+.profile_table {
+    margin: 0 auto;
+}
+
+.main_profile table, th, td {
+    border: 1px solid;
+}
+
+.main_profile th {
+    width: 200px;
+}
+
+.main_profile td {
+    width: 300px;
+}
+
+.tr1 {
+    height: 150px;
+}
+
+.tr2 {
+    height: 70px;
 }
