@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head_font {
+    font-size: 50pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.head {
+    margin: 0 0 0 600px;
+}
+
+header {
+    background-color: aqua;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.main_head {
+    float: left;
+}
+.tr1 {
+    width: 100px;
+}
