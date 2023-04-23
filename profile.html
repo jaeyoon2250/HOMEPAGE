@@ -6,7 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="profile.css">
+=======
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head_font {
+            font-size: 50pt;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+        }
+
+        .head {
+            margin: 0 0 0 600px;
+        }
+
+        header {
+            background-color: aqua;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .container {
+            width: 540px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .main_head {
+            /*            float: left; */
+        }
+
+        .tr1 {
+            width: 100px;
+        }
+
+        .profile_table {
+            margin: 0 auto;
+        }
+
+        .main_profile table, th, td {
+            border: 1px solid;
+        }
+
+        .main_profile th {
+            width: 200px;
+        }
+
+        .main_profile td {
+            width: 300px;
+        }
+
+        .tr1 {
+            height: 100px;
+        }
+
+        .tr2 {
+            height: 50px;
+        }
+
+    </style>
+>>>>>>> f9b6fc6dc9bddd6cbf193fc4fcc217818ca5ac98
 </head>
 
 <body>
@@ -25,15 +92,15 @@
             <p>자신의 프로필과 별명을 수정하실수 있습니다</p>
         </div>
         <br><br>
-        <div>
+        <div class="main_profile">
             <form>
-                <table border="1">
+                <table class="profile_table">
                     <tr class="tr1">
-                        <td>프로필 사진</td><!--세칸 사용-->
+                        <th>프로필 사진</th><!--세칸 사용-->
                         <td><img src="#"><button>사진변경</button><button>삭제</button></td>
                     </tr><!--사진변경과 삭제 버튼을 사진 칸 아래로 이동-->
                     <tr class="tr2">
-                        <td>아이디</td>
+                        <th>아이디</th>
                         <td><input type="text" placeholder="아이디"></td>
                     </tr>
                 </table>
