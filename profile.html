@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,50 +11,77 @@
             margin: 0;
             padding: 0;
         }
+
         .head_font {
             font-size: 50pt;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: white;
         }
+
         .head {
-            padding: 0 0 0 400px;
+            margin: 0 0 0 600px;
         }
+
         header {
             background-color: aqua;
         }
+
         a {
             text-decoration: none;
         }
+
+        .container {
+            width: 540px;
+            margin: 0 auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .main_head {
+            float: left;
+        }
+        .tr1 {
+            width: 100px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div>
             <a href="main.html" class="head head_font">My Blog</a>
         </div>
     </header>
-    <div>
-        <h2>프로필 수정</h2>
-    </div>
-    <div>
-        <p>자신의 프로필과 별명을 수정하실수 있습니다</p>
-    </div>
 
-    <form>
-        <table border="1">
-            <tr>
-                <td>프로필 사진</td><!--세칸 사용-->
-                <td><img src="#" alt="#"><button>사진변경</button><button>삭제</button></td>
-            </tr><!--사진변경과 삭제 버튼을 사진 칸 아래로 이동-->
-            <tr>
-                <td>아이디</td>
-                <td><input type="text" placeholder="아이디"></td>
-            </tr>
-        </table>
-        <div>
-            <button>적용</button>
-            <button>취소</button>
+    <main class="container">
+        <div class="main_head">
+            <h2>프로필 수정</h2>
         </div>
-    </form>
+        <br><br>
+        <div class="main_head">
+            <p>자신의 프로필과 별명을 수정하실수 있습니다</p>
+        </div>
+        <br><br>
+        <div>
+            <form>
+                <table border="1">
+                    <tr class="tr1">
+                        <td>프로필 사진</td><!--세칸 사용-->
+                        <td><img src="#"><button>사진변경</button><button>삭제</button></td>
+                    </tr><!--사진변경과 삭제 버튼을 사진 칸 아래로 이동-->
+                    <tr class="tr2">
+                        <td>아이디</td>
+                        <td><input type="text" placeholder="아이디"></td>
+                    </tr>
+                </table>
+                <div>
+                    <button>적용</button>
+                    <button>취소</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
 </body>
+
 </html>
