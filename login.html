@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./main.css" charset="UTF-8" />
     <style>
         table {
             border: 3px solid black;
@@ -12,33 +14,39 @@
             margin: 0 auto;
             padding: 30px;
         }
-        .head {
+
+        .login .head {
             text-align: center;
             margin: 200px 0 100px 0;
             background-color: aqua;
             color: white;
             font-size: 50pt;
-            
+
         }
-        .outside {
+
+        .login .outside {
             display: inline-block;
             margin-top: 30px;
         }
-        a {
+
+        .login a {
             text-decoration: none;
             color: black;
         }
-        div > a {
+
+        .login div>a {
             text-decoration: none;
             color: gray;
         }
-        a:nth-child(n+2) {
+
+        .login a:nth-child(n+2) {
             position: relative;
             margin-left: 5px;
             padding-left: 10px;
         }
-        a:nth-child(n+2)::after {
-            position:absolute;
+
+        .login a:nth-child(n+2)::after {
+            position: absolute;
             left: 0;
             top: 3px;
             content: "";
@@ -46,7 +54,8 @@
             height: 15px;
             background-color: black;
         }
-        .box_button {
+
+        .login .box_button {
             width: 340px;
             height: 40px;
             border-radius: 25px;
@@ -54,23 +63,28 @@
             margin: 10px 0 0 0;
             font-size: large;
         }
-        .checkbox {
+
+        .login .checkbox {
             margin-top: 15px;
         }
-        .box {
+
+        .login .box {
             border-radius: 10px;
             width: 330px;
             height: 20px;
             margin: 0 auto;
         }
-        .head_font {
+
+        .login .head_font {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        .checkbox {
+
+        .login .checkbox {
             font-size: xx-small;
         }
     </style>
 </head>
+
 <body>
     <!--페이지 제목 
     아이디/비번 입력창
@@ -79,35 +93,61 @@
     아이디/비번 찾기 버튼 - 누르면 find 탭으로 이동
     회원가입 버튼 + 회원가입 탭
     로그인 완료 후 main 탭으로 돌아감-->
-    
-        
-    
-        
-    
-        
-    <form>
-        <a href="main.html"><p class="head head_font">My Blog</p></a>
-        <table>
-            <tr>
-                <td><input type="text" class="box" placeholder="아이디"></td>
-            </tr>
-            <tr>
-                <td><input type="text" class="box" placeholder="비밀번호"></td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" class="checkbox">로그인 상태 유지</td>
-            </tr>
-            <tr>
-                <div>
-                    <td><button type="button" class="box_button" onClick="location.href='main.html'"><b>로그인</b></button></td>
+    <header id="header" class="header">
+        <div class="header_common">
+            <div class="inner">
+                <div class="area_logo">
+                    <h1 class="logo_blog">
+                        <a href="main.html" class="head head_font">My Blog</a>
+                    </h1>
                 </div>
-            </tr>
-        </table>
-        <div align="center">
-            <a href="find_PASSWD.html" class="outside">비밀번호 찾기</a>
-            <a href="find_ID.html" class="outside">아이디 찾기</a>
-            <a href="sign_up.html" class="outside">회원가입</a>
+                <div class="area_search">
+                    <div class="serach">
+                        <div class="area_dropdown" data-set="search">
+                            <select class="option" float="center">
+                                <option value="sentense">글</option>
+                                <option value="ID">아이디</option>
+                                <option value="name">블로그</option>
+                            </select>
+                        </div>
+                        <input type="text" class="textbox">
+                        <a href="#" class="button button_blog">
+                            <i class="sp_common icon_search"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    </header>
+    <main class="container">
+        <div class="login_content">
+            <div class="login">
+                <form>
+                    <table>
+                        <tr>
+                            <td><input type="text" class="box" placeholder="아이디"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="box" placeholder="비밀번호"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="checkbox">로그인 상태 유지</td>
+                        </tr>
+                        <tr>
+                            <div>
+                                <td><button type="button" class="box_button"
+                                        onClick="location.href='main.html'"><b>로그인</b></button></td>
+                            </div>
+                        </tr>
+                    </table>
+                    <div align="center">
+                        <a href="find_PASSWD.html" class="outside">비밀번호 찾기</a>
+                        <a href="find_ID.html" class="outside">아이디 찾기</a>
+                        <a href="sign_up.html" class="outside">회원가입</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

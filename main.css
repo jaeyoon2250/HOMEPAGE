@@ -1,0 +1,107 @@
+body, input, textarea, select, button, table {
+    font-family: "나눔고딕", "NanumGothic", "NanumGothicWebFont", "Malgun Gothic", "맑은 고딕", "Dotum", "돋움", "Helvetica", "Apple SD Gothic Neo", "sans-serif";
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.header_common {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 54px;
+    background-color: #00c73c;
+    border-bottom: 1px solid #51b036;
+    color: #fff;
+}
+
+.header .inner {
+    position: relative;
+    height: 100%;
+    width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+
+}
+
+.header_common .area_logo {
+    float: left;
+}
+
+.header_common .logo_blog {
+    float: left;
+    overflow: hidden;
+    margin: 10px 0 0 -4px;
+}
+
+.header_common .area_search {
+    float: left;
+    margin: 9px 0 0 19px;
+}
+
+.header_common .area_search .search {
+    position: relative;
+    float: left;
+    width: 322px;
+    height: 37px;
+    border: 1px solid #4da733;
+    border-right: 0;
+    background-color: #fff;
+}
+
+.header_common .area_search .area_dropdown[data-set="search"] {
+    float: left;
+    width: 99px;
+    height: 35px;
+}
+
+.header_common .area_search .area_dropdown[data-set="search"] .option {
+    width: 99px;
+    height: 35px;
+}
+
+.header_common .area_search .textbox {
+    float: left;
+    width: 222px;
+    height: 35px;
+    border: 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    text-indent: 10px;
+}
+
+.header_common .area_search .button_blog {
+    width: 36px;
+    line-height: 35px;
+}
+
+.header_common .area_search .button {
+    float: left;
+    height: 37px;
+    background-color: #28a93a;
+    border: 1px solid #239e36;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+}
+
+.container .main_content {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_content .content {
+    float: left;
+    width: 770px;
+    padding: 0;
+}
+
+.aside {
+    display: block;
+    float: right;
+    width: 280px;
+    margin: 15px 0 70px 0;
+}

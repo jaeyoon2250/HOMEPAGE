@@ -1,49 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        .head_font {
-            font-size: 50pt;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-        }
-        .head {
-            padding: 0 0 0 400px;
-        }
-        a {
-            text-decoration: none;
-        }
-        header {
-            background-color: aqua;
-        }
-        .option {
-            /* margin: 0 0 20px 100px; */
-            width: 70px;
-            height: 50px;
-            text-align: center;
-        }
-        .button {
-            width: 40px;
-            height: 40px;
-        }
-        .login_button {
-            float: right;
-        }
-        .main_button {
-            float: right;
-            width: 300px;
-            height: 50px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./main.css" charset="UTF-8" />
 </head>
+
 <body>
     <!--블로그 이름 + 이름은 로그인화면 제외 모든창에 추가, 
     이름을 누르면 메인화면으로 이동
@@ -59,38 +24,47 @@
     오른쪽엔 자신의 계정 정보와 자신이 작성한 글 보여줌
     닉네임 클릭하거나 우측 상단의 프로필 누르면 profile 탭으로 이동
     -->
-    <form>
-        <header>
-            <div class="head_line">
-                <a href="main.html" class="head head_font">My Blog</a>
-
-                <select class="option"float ="center">
-                    <option value="sentense">글</option>
-                    <option value="ID">아이디</option>
-                    <option value="name">블로그</option>
-                </select>
-                <input type="text">
-                <input type="button" class="button">
-                <button type="button" class="login_button" onClick="location.href='login.html'">로그인</button>
+    <header id="header" class="header">
+        <div class="header_common">
+            <div class="inner">
+                <div class="area_logo">
+                    <h1 class="logo_blog">
+                        <a href="main.html" class="head head_font">My Blog</a>
+                    </h1>
+                </div>
+                <div class="area_search">
+                    <div class="serach">
+                        <div class="area_dropdown" data-set="search">
+                            <select class="option" float="center">
+                                <option value="sentense">글</option>
+                                <option value="ID">아이디</option>
+                                <option value="name">블로그</option>
+                            </select>
+                        </div>
+                        <input type="text" class="textbox">
+                        <a href="#" class="button button_blog">
+                            <i class="sp_common icon_search"></i></a>
+                    </div>
+                </div>
             </div>
-        </header>
-            <div>
-                <ul>
-                    <li><a href="#">목록1</a></li>
-                    <li><a href="#">목록</a>2</li>
-                    <li>목록3</li>
-                    <li>목록4</li>
+        </div>
+    </header>
+    <main class="container">
+        <div class="main_content">
+            <div class="content" <ul>
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록</a>2</li>
+                <li>목록3</li>
+                <li>목록4</li>
                 </ul>
             </div>
-        <table>
-            <tr>
-                <td><button type="button" class="main_button" onClick="location.href='login.html'">로그인</button></td>
-            </tr>
-            <tr>
-
-            </tr>
-        </table>
-    </form>
-
+            <aside class="aside">
+                <div class="area_login">
+                    <button type="button" class="login_button" onClick="location.href='login.html'">로그인</button>
+                </div>
+            </aside>
+        </div>
+    </main>
 </body>
+
 </html>
