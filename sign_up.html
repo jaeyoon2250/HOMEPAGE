@@ -6,34 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .head_font {
-            font-size: 50pt;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: white;
-        }
-
-        .head {
-            padding: 0 0 0 400px;
-        }
-
-        header {
-            background-color: aqua;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .all {
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/sign_up.css">
 </head>
 
 <body>
@@ -43,9 +16,30 @@
         </div>
     </header>
 
-    <input type="checkbox" id="all">My Blog 이용약관, 개인정보 수집 및 이용,
-    위치기반 서비스 이용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.
+    <div>
+        <input type="checkbox" id="all"><b>Blog 이용약관, 개인정보 수집 및 이용,
+        위치기반 서비스 이용약관(선택), 프로모션 정보 수신(선택)에 모두 동의합니다.</b>
+    </div>
+    
 
+    <div>
+        <input type="checkbox" class="checkbox"><b>My Blog 이용약관 동의</b><p>(필수)</p>
+    </div>
+
+
+    <div>
+        <input type="checkbox" class="checkbox"><b>개인정보 수집 및 이용 동의</b><p>(필수)</p>
+    </div>
+
+
+    <div>
+        <input type="checkbox" class="checkbox"><b>위치기반 서비스 이용약관 동의</b><p>(선택)</p>
+    </div>
+
+
+    <div>
+        <input type="checkbox" class="checkbox"><b>프로모션 정보 수신 동의</b><p>(선택)</p>
+    </div>
 
 </body>
 
