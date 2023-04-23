@@ -29,8 +29,33 @@ a {
 }
 
 .main_head {
-    float: left;
+    /*            float: left; */
 }
+
 .tr1 {
     width: 100px;
+}
+
+.profile_table {
+    margin: 0 auto;
+}
+
+.main_profile table, th, td {
+    border: 1px solid;
+}
+
+.main_profile th {
+    width: 200px;
+}
+
+.main_profile td {
+    width: 300px;
+}
+
+.tr1 {
+    height: 100px;
+}
+
+.tr2 {
+    height: 50px;
 }
