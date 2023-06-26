@@ -7,20 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
+        // $(document).ready(function () {
+        //     for (var i = 0; i < 4; i++) {
+        //         var classStyle = '#content'+i;
+        //         $(classStyle).hover(function () {
+        //             $(classStyle).css({
+        //                 color: 'aqua',
+        //                 textDecoration: 'underLine'
+        //             });
+        //         }, function () {
+        //             $(classStyle).css({
+        //                 color: '',
+        //                 textDecoration: 'none'
+        //             });
+        //         });
+        //     }
+        // })
         $(document).ready(function () {
-            $('nav').hover(function () {
-                $('nav').css({
-                    backgroundColor : 'blue',
-                    text-decoration : underline
-                });
-            }, function () {
-                $('nav').css({
-                    backgroundColor: '',
-                    color: ''
+            $('.content-nav').each(function () {
+                $(this).hover(function () {
+                    $(this).addClass('lst_over');
+                }, function () {
+                    $(this).removeClass('lst_over');
+                }).focusin(function () {
+                    $(this).addClass('lst_over');
+                }).focusout(function () {
+                    $(this).removeClass('lst_over');
                 });
             });
-        })
+        });
     </script>
 </head>
 
@@ -63,10 +80,10 @@
         <hr>
         <nav id="main-nav">
             <ul class="nav">
-                <li><a href="#">목록1</a></li>
-                <li><a href="#">목록2</a></li>
-                <li><a href="#">목록3</a></li>
-                <li><a href="#">목록4</a></li>
+                <li><a href="#" class="content-nav" id="content0">목록1</a></li>
+                <li><a href="#" class="content-nav" id="content1">목록2</a></li>
+                <li><a href="#" class="content-nav" id="content2">목록3</a></li>
+                <li><a href="#" class="content-nav" id="content3">목록4</a></li>
             </ul>
         </nav>
         <hr>
