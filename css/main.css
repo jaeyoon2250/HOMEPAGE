@@ -29,6 +29,14 @@ a {
     color: black;
 }
 
+li {
+    list-style: none;
+}
+
+#main-nav {
+    margin: 10px 0;
+}
+
 header {
     background-color: aqua;
     margin: 0 0 10px 0;
