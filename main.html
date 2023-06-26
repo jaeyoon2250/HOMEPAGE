@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Blog</title>
     <link rel="stylesheet" href="./css/main.css">
+    <script>
+        $(document).ready(function () {
+            $('nav').hover(function () {
+                $('nav').css({
+                    backgroundColor : 'blue',
+                    text-decoration : underline
+                });
+            }, function () {
+                $('nav').css({
+                    backgroundColor: '',
+                    color: ''
+                });
+            });
+        })
+    </script>
 </head>
 
 <body>
@@ -44,16 +59,18 @@
             </div>
         </div>
     </header>
-    
-    <hr>
-    <ul class="nav">
-        <li><a href="#">목록1</a></li>
-        <li><a href="#">목록2</a></li>
-        <li><a href="#">목록3</a></li>
-        <li><a href="#">목록4</a></li>
-    </ul>
-    <hr>
-
+    <div>
+        <hr>
+        <nav id="main-nav">
+            <ul class="nav">
+                <li><a href="#">목록1</a></li>
+                <li><a href="#">목록2</a></li>
+                <li><a href="#">목록3</a></li>
+                <li><a href="#">목록4</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
     <main class="container">
 
         <br><br>
@@ -191,7 +208,8 @@
             <form>
                 <table>
                     <tr>
-                        <td><button type="button" class="main_login_button" onClick="location.href='login.html'">로그인</button>
+                        <td><button type="button" class="main_login_button"
+                                onClick="location.href='login.html'">로그인</button>
                         </td>
                     </tr>
                     <tr>
