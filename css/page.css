@@ -23,7 +23,7 @@ a {
 }
 
 
-.main_content {
+.main_body {
     width: 720px;
     float: left;
 }
@@ -55,4 +55,10 @@ a {
 
 .tr2 {
     height: 70px;
+}
+
+.main-button {
+    float: right;
+    width: 30px;
+    height: 30px;
 }

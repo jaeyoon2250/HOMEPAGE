@@ -7,41 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <link rel="stylesheet" href="./css/login.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.box_button').click(function (event) {
+                var username = $('#username').val();
+                var password = $('#password').val();
+
+                if (/^[a-zA-Z]+$/.test(username) && /^[a-zA-Z]+$/.test(password)) {
+                    // Valid input, perform login
+                } else {
+                    // Invalid input, show error message
+                    alert('아이디와 비밀번호는 영어로만 입력 가능합니다.');
+                    event.preventDefault();
+                }
+            });
+
+            $('form').submit(function (event) {
+                event.preventDefault(); // Prevent the form from submitting normally
+                
+                var username = $('#username').val();
+                var password = $('#password').val();
+
+                if (/^[a-zA-Z]+$/.test(username) && /^[a-zA-Z]+$/.test(password)) {
+                    // Valid input, perform login
+                    alert('로그인 성공.');
+                    window.location.href = "main.html";
+                } else {
+                    // Invalid input, show error message
+                    alert('아이디와 비밀번호는 영어로만 입력 가능합니다.');
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <!--페이지 제목 
-    아이디/비번 입력창
-    로그인상태 유지 선택 버튼
-    로그인 버튼
-    아이디/비번 찾기 버튼 - 누르면 find 탭으로 이동
-    회원가입 버튼 + 회원가입 탭
-    로그인 완료 후 main 탭으로 돌아감-->
-
-
-
-
-
-
     <form>
         <a href="main.html">
             <p class="head head_font">My Blog</p>
         </a>
         <table>
             <tr>
-                <td><input type="text" class="box" placeholder="아이디"></td>
+                <td><input type="text" class="box" id="username" placeholder="아이디"></td>
             </tr>
             <tr>
-                <td><input type="text" class="box" placeholder="비밀번호"></td>
+                <td><input type="password" class="box" id="password" placeholder="비밀번호"></td>
             </tr>
             <tr>
                 <td><input type="checkbox" class="checkbox">로그인 상태 유지</td>
             </tr>
             <tr>
-                <div>
-                    <td><button type="button" class="box_button" onClick="location.href='main.html'"><b>로그인</b></button>
-                    </td>
-                </div>
+                <td><button type="submit" class="box_button"><b>로그인</b></button></td>
             </tr>
         </table>
         <div align="center">
