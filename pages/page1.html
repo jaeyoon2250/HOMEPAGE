@@ -10,14 +10,24 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
         $(document).ready(function () {
-            $('button').click(function () {
-                $('.main-content').fadeToggle('slow');
+            $('.main-content').fadeIn(700);
+            $('.light').click(function (event) {
+                event.preventDefault();
+                $('#picbig').fadeIn('slow')
+                $('#backgray').fadeIn('slow')
+            })
+            $('#backgray').click(function(){
+                $('#picbig').fadeOut('slow')
+                $('#backgray').fadeOut('slow')
             })
         })
+        
     </script>
 </head>
 
 <body>
+    <div id="backgray"></div>
+
     <header>
         <div>
             <a href="../main.html" class="head head_font">My Blog</a>
@@ -25,9 +35,12 @@
     </header>
     <main class="container">
         <div class="main_body">
+            <div id="picbig">
+                
+            </div>
+
             <div>
                 <h1>Lorem ipsum</h1>
-                <button class="main-button">▼</button>
             </div>
             <br><br>
             <div class="main-content">
@@ -114,7 +127,7 @@
                     <table class="profile_table">
                         <tr class="tr1">
                             <th>프로필<br>사진</th>
-                            <td><a href="../imgs/ping9.jpg"><img src="../imgs/ping9.jpg" class="light"></a></td>
+                            <td><button class="light"><img src="../imgs/ping9.jpg"></button></td>
                         </tr>
                         <tr class="tr2">
                             <th>아이디</th>
